@@ -1,0 +1,32 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+.logo {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+.today {
+  display: flex;
+  width: 500px;
+  margin-left: 50px;
+  align-items: center;
+}
+
+input {
+  width: 600px;
+}
+
+.manager {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}

@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  border-radius: 0px 50px 0px 0px;
+  height: 100%;
+  position: fixed;
+  color: white;
+  background-color: rgb(47, 76, 156);
+}
+
+.logout {
+  position: fixed;
+  bottom: 50px;
+  padding: 10px;
+  margin-left: 65px;
+  border-radius: 5px;
+}

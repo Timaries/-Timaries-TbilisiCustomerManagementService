@@ -1,0 +1,42 @@
+<div class="login_page">
+  <div class="login-container">
+    <div class="left_side">
+      <div class="day">
+        {{ newday | date: "EEEE" }}
+      </div>
+      <div class="month">
+        {{ newday | date: "MMMM d, y" }}
+      </div>
+    </div>
+    <div class="right_side m10">
+      <span>Hello</span>
+      <p>Please login to use the services</p>
+      <input
+        matInput
+        [(ngModel)]="username"
+        (keyup.enter)="login()"
+        type="text"
+        class="login_in m5"
+        placeholder="User ID"
+      />
+      <input
+        matInput
+        [(ngModel)]="password"
+        (keyup.enter)="login()"
+        type="password"
+        class="login_in m5"
+        placeholder="Password"
+      />
+      <label for="save" class="login_check m10">
+        Stay signed in
+        <input type="checkbox" class="login_cb" name="save" id="save" />
+      </label>
+      <input (click)="login()" type="button" class="button" value="Login" />
+
+      <div class="spinner">
+        <mat-spinner *ngIf="showSpinner"></mat-spinner>
+        <div class="error" *ngIf="showStatus">Wrong user ID or password.</div>
+      </div>
+    </div>
+  </div>
+</div>

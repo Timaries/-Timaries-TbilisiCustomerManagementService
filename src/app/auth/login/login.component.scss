@@ -1,0 +1,103 @@
+.login_page {
+  background-image: url(https://www.designbolts.com/wp-content/uploads/2014/03/Bright-Blue1.jpg);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20vh;
+  background-color: white;
+  border-radius: 5px;
+  height: 377px;
+}
+
+//  Start of Left Side (Day/Time Pipe)
+.left_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  color: white;
+  border-radius: 5px 250px 00px 5px;
+  background-color: rgb(47, 76, 156);
+  width: 350px;
+}
+.day {
+  margin-left: 100px;
+  margin-bottom: 15px;
+  font-family: edutas;
+  font-size: 3rem;
+}
+.month {
+  margin-left: 85px;
+  // margin-bottom: 15px;
+  font-family: edutas;
+  font-size: 1.5rem;
+}
+//  End of Left Side (Day/Time Pipe)
+
+// Starg of Right Side (Login Labels & Inputs)
+.right_side {
+  display: flex;
+  flex-direction: column;
+}
+
+.login_in {
+  width: 220px;
+  height: 25px;
+  font-size: 0.9rem;
+}
+
+.login_check {
+  align-items: center;
+  text-align: right;
+  font-size: 0.8rem;
+  color: rgb(66, 65, 65);
+  cursor: pointer;
+}
+
+.button {
+  font-size: 0.9rem;
+  padding: 10px;
+  color: rgb(63, 63, 63);
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+  border: none;
+}
+
+.button:hover {
+  background-color: rgb(55, 104, 240);
+  color: white;
+  transition: 0.3s;
+}
+
+span {
+  color: rgb(55, 104, 240);
+  font-size: 2rem;
+  margin: 15px;
+}
+
+p {
+  margin: 0px 0px 35px 10px;
+  color: rgb(66, 65, 65);
+  font-size: 0.9rem;
+}
+.spinner {
+  display: flex;
+  justify-content: center;
+}
+.error{
+  color: red;
+  margin-top: 15px;
+}
+// End of Right Side (Login Labels & Inputs)
+
